@@ -1,5 +1,5 @@
 <template>
-    <nav class="nav-scenes">
+    <div class="nav-scenes">
         <div class="nav-stories">
             <Story
                 v-for="(img, i) in stories"
@@ -25,7 +25,7 @@
                 </span>
             </div>
         </div>
-    </nav>
+    </div>
 </template>
 
 <script>
@@ -63,11 +63,17 @@
     .nav {
         &-scenes {
             display: flex;
+            width: 87rem;
             justify-content: space-between;
             align-items: flex-end;
-            width: 87rem;
             padding-bottom: 2rem;
+            padding-top: 2rem;
+            padding-right: 4rem;
             margin: auto;
+            background: $grey--dark;
+            position: fixed;
+            z-index: 5;
+            top: 0;
         }
         &-right {
             display: flex;
