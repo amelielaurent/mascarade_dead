@@ -9,15 +9,21 @@
                 :description="img.description"/>
         </div>
         <div class="nav-right">
-            <router-link class="item home" to="/student/exp">
-                <Home />
-            </router-link>
-            <router-link class="item msg" to="/student/messages">
-                <Msg />
-            </router-link>
-            <span class="item help">
-                <Help />
-            </span>
+            <div class="nav-link">
+                <router-link class="item home" to="/student/exp">
+                    <Home />
+                </router-link>
+            </div>
+            <div class="nav-link">
+                <router-link class="item msg" to="/student/messages">
+                    <Msg />
+                </router-link>
+            </div>
+            <div class="nav-link">
+                <span class="item help">
+                    <Help />
+                </span>
+            </div>
         </div>
     </nav>
 </template>
@@ -64,11 +70,12 @@
             margin: auto;
         }
         &-right {
+            display: flex;
             a, span {
                 margin-left: 1rem;
             }
             .item {
-                img {
+                svg {
                     width: 3rem;
                     margin-left: 1rem;
                 }
