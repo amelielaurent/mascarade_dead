@@ -9,7 +9,8 @@
             <Comment name="Lucie Bernard" date="Il y a 3 jours" description="Grave je préférerai être morte qu’avoir ta tête !"/>
             <div class="Button-container">
             <div class="Button-group">
-                <button class="Button-share" type="button">Commenter</button>
+                <button class="Button-share" type="button">J'avoue trop moche !</button>
+                <button class="Button-share" type="button">Cool cette photo !</button>
                 <button class="Button-report" type="button" @click="updateReport">Signaler</button>
             </div>
             </div>
