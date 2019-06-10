@@ -12,8 +12,6 @@
                     <button @click="emitEvent">Envoyer un poke</button>-->
                     <Charity />
                     <FakeNews />
-                    <Charity />
-                    <Charity />
                     <Harassment />
                     <FakeNews />
                 </div>

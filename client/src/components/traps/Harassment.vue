@@ -44,6 +44,7 @@
     .Harassment {
         &-container {
             border: 1.5px solid $white;
+            margin: 50px 0;
         }
         &-group {
             padding: 0 7rem 3.8rem 7rem;

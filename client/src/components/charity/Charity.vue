@@ -12,12 +12,13 @@
                 <div class="indicator"></div>
             </div>
         </div>
+        <p class="charity-published">Ton article vient d'être publié</p>
         <form  class="charity-content" action="">
             <input type="text" class="student-response charity-title" name="title" placeholder="Ajoute un titre">
             <textarea class="student-response charity-description" name="description" placeholder="Ajoute une description (minimum 50 mots)"></textarea>
             <div class="Button-container">
                 <div class="Button-group">
-                <button class="Button-share" type="submit" @click.prevent="shareCharity">Partager</button>
+                    <button class="Button-share" type="submit" @click.prevent="shareCharity">Partager</button>
                 </div>
             </div>
         </form>
@@ -69,6 +70,8 @@
             shareCharity() {
                 console.log('add charity to db and +1 share');
                 this.$store.dispatch('updateAchievement', {type: 'shares', amount: 1})
+                var published = document.body.querySelector('.charity-published');
+                published.classList.toggle("visible");
             }
         }
     }
@@ -102,6 +105,14 @@
         &-content {
             padding: 0 7rem 3.8rem 7rem;
             margin-top: 3rem;
+        }
+        &-published {
+            display: none;
+            font-size: 1.4rem;
+            &.visible {
+                display: flex;
+                justify-content: center;
+            }
         }
 
     }
