@@ -110,6 +110,7 @@
         margin: 0 auto;
         display: flex;
         border-radius: 0.5rem;
+        height: 48rem;
     }
     .contacts {
         width: 35rem;
@@ -121,8 +122,18 @@
         flex-grow: 1;
         background-color: $black;
         border-top-right-radius: 0.5rem;
+        overflow-y: scroll;
+        width: 100%;
         &-answer {
             display: flex;
+        }
+        &::-webkit-scrollbar {
+            background-color: $black;
+        } 
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba(17, 17, 17, 0.6); 
+         
         }
     }
     .contact-info {
