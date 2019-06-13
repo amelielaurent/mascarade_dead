@@ -1,13 +1,13 @@
 const state = {
   allStories : [{
     src: "https://picsum.photos/300/500",
-    name: "Boudon",
-    description: "test",
+    name: "Le monde",
+    description: "Une future explosion ?",
     delay: 1500,
   },{
       src: "https://picsum.photos/300/500",
-      name: "Barbie",
-      description: "test2",
+      name: "Léon Pariom",
+      description: "5 personnes viennent de signaler le profil d'Alain",
       delay: 1500,
   },{
       src: "https://picsum.photos/300/500",

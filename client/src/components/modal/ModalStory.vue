@@ -90,8 +90,12 @@
     }
 
     .modal-body {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40rem;
+        text-align: center;
       img {
         max-width: 35rem;
       }

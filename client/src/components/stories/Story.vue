@@ -24,7 +24,7 @@
         methods: {
             showModal() {
                 this.isModalVisible = true;
-                //setTimeout(this.closeModal, 8000);
+                setTimeout(this.closeModal, 8000);
             },
             closeModal() {
                 this.isModalVisible = false;
