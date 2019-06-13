@@ -11,7 +11,7 @@ const state = {
       delay: 1500,
   },{
       src: "https://picsum.photos/300/500",
-      name: "Pourto",
+      name: "Léo",
       description: "test3",
       delay: 1500,
   }]
